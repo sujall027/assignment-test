@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task Manager</title>
+    <style>
+        body {
+            font-family: 'Times New Roman';
+            background-image: url(bg-1.webp); 
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        .task-input button {
+            background-color: rgb(255, 240, 247);
+            color: black;
+            border: 10px;
+        }
+        .filters button {
+            padding: 8px 16px;
+            background-color: green;
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Task Manager</h1>
+        <div class="task-input">
+            <input type="text" placeholder="Enter new task">
+            <button>Add Task</button>
+        </div>
+        <div class="filters">
+            <input type="text" placeholder="Search tasks..." onkeyup="filterTasks()">
+            <button>Sort Alphabetically</button>
+            <p>Total: "total"0 | Completed: 0 | Pending 0</p>
+        </div>
+    </div>
+</body>
+</html>
